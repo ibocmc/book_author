@@ -56,9 +56,10 @@ class BookPageViewModel with ChangeNotifier{
 
     WidgetsBinding.instance.addPostFrameCallback((_){
       _getFirstViewBooks();
+      notifyListeners();
     });
 
-    notifyListeners();
+
 }
 
 
