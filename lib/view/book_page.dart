@@ -95,7 +95,6 @@ class BookPage extends StatelessWidget {
 
               }).toList(),
 
-
               onChanged: (int? newValue){
 
                 if(newValue!=null){
@@ -111,7 +110,6 @@ class BookPage extends StatelessWidget {
       ],
     );
   }
-
 
   Widget _buildListItem(BuildContext context , int index) {
 
@@ -156,7 +154,7 @@ class BookPage extends StatelessWidget {
                           viewModel.is_Chosen = false;
                         }
 
-                        book.choose(newValue);
+                         book.choose(newValue);
 
 
                         if (kDebugMode) {
